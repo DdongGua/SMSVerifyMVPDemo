@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginTop="150dp"
+              android:gravity="center_vertical"
+              android:orientation="vertical"
+              tools:context="com.example.smsverifymvpdemo.ui.login.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入手机号"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColorHint="#888"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/sms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="验证码"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColorHint="#888"
+            />
+
+        <TextView
+            android:id="@+id/sendsms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="发送验证码"
+            android:textSize="18sp"
+            />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FF9D9B"
+        android:text="登录"/>
+
+
+</LinearLayout>
